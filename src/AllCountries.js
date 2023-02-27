@@ -32,8 +32,8 @@ const AllCountries = ({country, name}) => {
 
     return ( 
         
-        <div className='container-fluid overflow-hidden '>
-            <div className='row justify-content-evenly mx-md-4 allcountry' >
+        <div className='container-fluid  '>
+            <div className='row justify-content-evenly allcountry' >
                {countries.length ? countries.map((oneCountry) => {
                
                         const {flag,name,population,region,capital} = oneCountry;

@@ -30,9 +30,7 @@ body{
     
 }
 
-.allcountry{
-    
-}
+
 .colorcountry{
     background-color: var(--element-bg);
     border: 1px var(--txt-bg) solid;
@@ -72,9 +70,6 @@ margin-top: 10px;
     border-radius: 10px;  
     background-color: var(--element-bg);
    
-}
-.search{
-  
 }
 .input{
         width: 340px;
@@ -236,6 +231,16 @@ margin-top: 10px;
 
 @media (max-width:575px) {
 .colorcountry{
-    margin: 0px 100px;
+    max-width: 400px;
+   
+    
 }
+}
+
+@media (max-width:410px) {
+    .colorcountry {
+        max-width: 300px;
+
+
+    }
 }
