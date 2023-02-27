@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.light {
+    --element-bg: hsl(0, 0%, 100%);
+    --main-bg: hsl(0, 2%, 91%);
+    --txt: hsl(200, 15%, 8%);
+    --input: hsl(0, 0%, 52%);
+    --shadow: hsl(0, 1%, 78%);
+}
+
+.dark {
+    --element-bg: hsl(209, 23%, 22%);
+    --main-bg: hsl(207, 26%, 17%);
+    --txt: hsl(0, 0%, 100%);
+    --input: hsl(209, 23%, 22%);
+    --shadow: hsl(209, 25%, 23%);
+}
+
+body{
+    font-family: "Nunito Sans" , sans-serif;
+        color: var(--txt);
+        background-color: var(--main-bg);
+        font-size: var(--font-size-homepage);
+    
+}
+
+.allcountry{
+    
+}
+.colorcountry{
+    background-color: var(--element-bg);
+    border: 1px var(--txt-bg) solid;
+color: var(--txt);
+text-decoration: none;
+        
+       
+}
+
+.colorcountry:hover{
+color: var(--txt);
+text-decoration: none;
+}
+
+
+.setnavv{
+    background-color: var(--txt-bg);
+    color: var(--txt-bg);
+    border: none;
+}
+
+.form {
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+    align-items: center;
+}
+ .navbarr{
+    background-color: var(--element-bg);
+ }
+
+.search{
+margin-top: 10px;
+    margin-left: 74px;
+    border-radius: 10px;  
+    background-color: var(--element-bg);
+   
+}
+.search{
+  
+}
+.input{
+        width: 340px;
+        height: 40px;
+        padding-left: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--element-bg);
+        color: var(--txt-bg);
+    
+}
+
+.searches{
+    
+   padding-left: 10px;
+   
+}
+
+.selects{
+    margin-top: 15px;
+        margin-right: 74px;
+        
+}
+
+.select{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 90px;
+        height: 40px;
+        background-color: var(--element-bg);
+        color: var(--txt-bg);
+        
+}
+.back {
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 20px;
+    width: 120px;
+    height: 40px;
+    margin: 50px 0;
+    font-weight: var(--font-medium);
+    border-radius: 8px;
+    place-items: center;
+    background-color: var(--element-bg);
+    box-shadow: 2px -2px 4px var(--shadow),
+        -2px 2px 4px var(--shadow);
+}
+
+.back i {
+    margin-right: 10px;
+}
+
+.countryPage a {
+    text-decoration: none;
+    color: var(--txt);
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    
+        justify-content: center;
+}
+
+.country .flag {
+    width: 40%;
+}
+
+.flag img {
+    width: 90%;
+}
+
+.countryInfo {
+    margin-top: 20px;
+    padding-left: 60px;
+    width: 50%;
+}
+
+.countryInfo .name {
+    margin-bottom: 20px;
+}
+
+.countryInfo h3 {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: var(--font-size-detail)
+}
+
+.generalInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.generalInfo div div {
+    margin-bottom: 8px;
+}
+
+.borderCountries .borders {
+    display: inline-block;
+    padding: 4px;
+    background-color: var(--element-bg);
+    border: 1px solid var(--shadow);
+    margin-bottom: 10px;
+}
+
+.borderCountries .borders:not(:last-child) {
+    margin-right: 12px;
+}
+
+@media (max-width:775px){
+    .selects {margin-left: 74px;
+}
+.input{
+    width: auto;
+    height: auto;
+    
+}
+.select{
+    width: auto;
+    height: auto;
+}
+
+.setnav {
+    font-size: medium;
+}
+
+.setnavv {
+    font-size: small;
+}
+
+
+
+  .about {
+      flex-direction: column;
+  }
+
+  .country .flag {
+      width: 100%;
+      text-align: center;
+  }
+
+  .countryInfo {
+      margin-top: 20px;
+      padding-left: 10px;
+      width: 100%;
+  }
+
+  .generalInfo {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0;
+  }
+}
+
+@media (max-width:575px) {
+.colorcountry{
+    margin: 0px 100px;
+}
+}
